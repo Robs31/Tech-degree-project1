@@ -5,7 +5,6 @@ project 1 - A Random Quote Generator
 
 // Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
 
-
 /*** 
   Create the array of quote objects and name it `quotes`.
   Add at least five quote objects to the `quotes` array.
@@ -16,6 +15,34 @@ project 1 - A Random Quote Generator
 ***/
 
 
+var quotes = [
+  {
+      quote: "In a world where you can be anything be kind.",
+      source: "Unknown"
+  } ,
+  {
+      quote: "If you believe in yourself anything is possible.",
+      source: "Miley Cyrus"
+  } ,
+  {
+      quote: "You can do anything but not everything.",
+      source: "David Allen"
+  } ,
+  {
+      quote: "A person who never made a mistake never tried anything new.",
+      source: "Albert Einstein"
+  } ,
+  {
+      quote: "Believe in your dreams and that anything is possible.",
+      source: "Usain Bolt"
+  } ,
+  {
+      quote: "If you have a friend that you can talk to about anything and they won't judge you, never let them go.",
+      source: "Pure Love Quotes.com"
+  } ,
+
+
+];
 
 
 /***
@@ -23,7 +50,11 @@ project 1 - A Random Quote Generator
    - Create a variable to store a random number 
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
+function getRandomQuote() {
+  var randomQuote = quotes [Math.floor(Math.random() * (quotes.length))];
+  return randomQuote;
 
+}
 
 
 
